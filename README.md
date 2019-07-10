@@ -36,6 +36,8 @@
       <li>This funtion will render 'home.html'.</li>
     </ul>
   </li>
+</ul>
+<hr>
   <li>send_html_element_from_python_function()
     <ul>
       <li>url: <a href="#">localhost:8000/request/element/</a></li>
