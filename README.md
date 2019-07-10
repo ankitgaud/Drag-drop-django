@@ -1,4 +1,4 @@
-<h1>Dash Board For Creating Web Pages Using Webpages Using Django and Javascript</h1>
+<h1>Dash Board For Creating Web Pages(Drag and drop) Using Django and Javascript</h1>
 <hr>
 <h5>Dependencies</h5>
 <ul>
