@@ -1,0 +1,15 @@
+.c1{margin-top:20px; background-color: #cdd2d8;}
+.c2{background-color: #cdd2d8; border:2px solid black; height: 600px;}
+.c3{ background-color: #e8a7a0; height: 600px; border:2px solid black;}
+body{background-color: wheat;}
+#div1 {width: 98%; height: 500px; border: 1px solid #aaaaaa;margin-top: 1%; background-color: white;}
+#add_more_element{border: black 2px solid}
+#save{ }
+#save2{}
+#heading{text-align: center;}
+.a{list-style-type: circle;}
+#navbar{vertical-align: middle; color:red; font-size: 25px; font-family: sans-serif;}
+#usr{color:blue;}
+#pwd{color: blue;}
+#label1{color:blue;}
+.c12{overflow: scroll;}

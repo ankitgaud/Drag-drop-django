@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static from staticfiles %}
+<div id="div" class="container-fluid">
+		<ul class="list-group">
+    		{% for a in all_pages %}
+    		<li class="list-group-item list-group-item-primary">
+    			<input type="button" class="btn btn-primary" value="{{ a.Name_of_page }}" id="{{a.id}}" onclick="myfunction({{a.id}})">
+    		</li>
+    		{% endfor %}
+    	</ul>
+</div>
+<br><hr>
+<p style="text-align: center;"><input type="button"  class= "btn btn-danger" value="Print" id="print" ></p>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#print").click(function() {
+ 	window.print()
+	});
+         
+});
+</script>
+<script src="{% static 'js/show_pages.js' %}"> </script>
+{% endblock %}

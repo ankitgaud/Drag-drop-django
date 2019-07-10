@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static from staticfiles %}
+	<script src="{% static 'js/home.js' %}"> </script>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/css/home.css' %}">
+
+	<div class="container-fluid">
+	<div class="row">
+
+	<div class="col-sm-3 c2 c12">
+
+	<div class="dropdown dropright">
+  	<button id="add_more_element" type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+    Add More Element
+  	</button>
+	  <div class="dropdown-menu">
+	    <p class="dropdown-item"><input id="a1" class="btn btn-success" type="button" name="button" value="Button"></p>
+	    <p class="dropdown-item"><input id="a2" class="btn btn-success" type="button" name="button" value="label"></p>
+	    <p class="dropdown-item"><input id="a3" class="btn btn-success" type="button" name="button" value="Cards"></p>
+	    <p class="dropdown-item"><input id="a5" class="btn btn-success" type="button" name="button" value="Form"></p>
+	    <p class="dropdown-item"><input id="a6" class="btn btn-success" type="button" name="button" value="Input"></p>
+	    <p class="dropdown-item"><input id="a7" class="btn btn-success" type="button" name="button" value="Form input group"></p>
+	    <p class="dropdown-item"><input id="a8" class="btn btn-success" type="button" name="button" value="Navbar"></p>
+	    <p class="dropdown-item"><input id="a9" class="btn btn-success" type="button" name="button" value="Dropdown"></p>  
+	  </div>
+	</div>
+	
+
+	<div class='c1' id="c11">
+
+		<input type="button" class="btn btn-primary" draggable="true" ondragstart="dragStart(event)" value="basic" id="btn4" ondragend='dragEnd(event,"#btn4")'>
+		
+		<input type="button" class="btn btn-primary" id="btn5" draggable="true" ondragstart="dragStart(event)" ondragend='dragEnd(event,"#btn5")'' value="Default"><br>
+		
+		<div class="form-group" draggable="true" ondragstart="dragStart(event)" id = "checkbox_checkbox">
+			<label style="color:blue"> <b>Check it : </b></label>
+			<input type="checkbox" value="checkbox" id="checkbox">
+		</div>	
+
+		<nav class="navbar bg-dark justify-content-between" draggable="true" ondragstart="dragStart(event)" id="nav">
+		  <p class="navbar-brand" id="navbar">Navbar</p>
+		  <form class="form-inline">
+		    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="">
+		    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		  </form>
+		</nav>
+
+		<div class="form-group" draggable="true" ondragstart="dragStart(event)" id = "user_name">
+			<label id="usr"><b>Name:</b></label>
+			<input type="text" class="form-control" id="usr" style="width: 50%">
+		</div>
+		<div class="form-group" draggable="true" ondragstart="dragStart(event)" id="password">
+			<label id="pwd"><b>Password:</b></label>
+			<input type="password" class="form-control" id="pwd" style="width: 50%">
+		</div>
+
+	</div>
+	</div>
+
+
+	<div class='col-sm-9 c3'>
+		<h3 style="color:white;" id="heading">Create Web Page in Quick time. <input type="button" style="vertical-align: middle" id="save" value="Save" class="btn btn-primary">
+		<input type="button" style="vertical-align: middle" id="save2" value="Preview" class="btn btn-primary">	<input type="button" style="vertical-align: middle" id="show_pages" value="Show created pages" class="btn btn-primary" href="/show_pages/" >
+		</h3>
+		<div id="div1" ondrop="dragDrop(event)" ondragover="allowDrop(event)" style="padding: 1em" class="c12"></div>
+	</div>
+</div>
+</div>
+
+		<div style="margin:10px; background-color: white; height: 500px; width: 100%; border: 2px solid black;" class="c12">
+		
+			<div style="width: 100%; height: 100%;margin: 2em;" id="gaud" >Preview</div>
+		</div>
+
+
+{% endblock %}
