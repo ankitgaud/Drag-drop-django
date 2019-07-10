@@ -23,8 +23,7 @@
   <li>Use pip or conda to install all above python-libraries</li>
   <li>Link css library and Link Jquery library</li>
   <li>Access on localhost:8000/</li>
-</ul>
-<hr>
+
 <h3>Describe Functions:</h3>
 <h5>myapp/views.py</h5>
 <ul>
@@ -63,5 +62,7 @@
     </ul>
   </li>
 </ul>
+
+<hr>
 
 
