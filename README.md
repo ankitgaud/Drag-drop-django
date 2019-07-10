@@ -30,7 +30,12 @@
 <ul>
   <li>Home() 
   </li>
-  <li>request_element()</li>
+  <li>request_element()
+    <ul>
+      <li>url: <a href="#">localhost:8000/</a></li>
+      <li>This funtion will render home.html.</li>
+    </ul>
+  </li>
   <li>send_html_element_from_python_function()</li>
   <li>save_file()</li>
   <li>Show_pages()</li>
