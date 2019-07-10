@@ -23,21 +23,24 @@
   <li>Use pip or conda to install all above python-libraries</li>
   <li>Link css library and Link Jquery library</li>
   <li>Access on localhost:8000/</li>
-
-<h3>Describe Functions:</h3>
-<h5>myapp/views.py</h5>
+</ul>
+<hr>
+<h3>Describe Module and Functions:</h3>
+<h4>myapp/views.py</h4>
 <ul>
-  <li>Home() 
-  </li>
-  <li>request_element()
+  <li>Home()
     <ul>
       <li>url: <a href="#">localhost:8000/</a></li>
       <li>This funtion will render 'home.html'.</li>
     </ul>
   </li>
-</ul>
-<hr>
   <li>send_html_element_from_python_function()
+    <ul>
+      <li>url: <a href="#">localhost:8000/request/Element/</a></li>
+      <li>This function would call through above url and response data after retieve from database.</li>
+    </ul>
+  </li>
+  <li>request_element()
     <ul>
       <li>url: <a href="#">localhost:8000/request/element/</a></li>
       <li>On click button(add more element) for add specific tag then jquery and ajax function request data from above url and then above function give response. In this function, a variable is declared as string value. I used that variable directly.</li>
@@ -58,11 +61,35 @@
   <li>Open_pages()
     <ul>
       <li>url: <a href="#">localhost:8000/Open_page/</a></li>
-      <li>If we want open any webpage, then click button present in list then above function retrive data from database and send data through above url. </li>
+      <li>If we want open any webpage, then click button present in list then above function retrieve data from database and send data through above url. </li>
     </ul>
   </li>
 </ul>
 
+<h4> myapp/models.py</h4>
+<ul>
+  <li>Document()
+  <ul>
+    <li>This django model is used to store Html tag file.</li>
+  </ul>
+  </li>
+  <li>create_page()
+  <ul>
+    <li>This django model is used to save created page.</li>
+  </ul>
+  </li>
+</ul>
+<h4>static/home.js</h4>
+<ul>
+  <li>This static file is used by 'home.html'. Ajax and Jquery code is present in the same file and other javascript event is also present in this file.</li>
+  </ul>
+<h4>I used dynamic templates with extending html base file.</h4>  
 <hr>
+<h3>Instructions</h3>
+<ul>
+  <li>Run with 'python manage.py runserver</li>
+  <li>Make sure network connection(Jquery and css bootstrap library's online link are used. )</li>
+</ul>
+
 
 
