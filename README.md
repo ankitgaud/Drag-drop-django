@@ -87,7 +87,7 @@
 <hr>
 <h3>Instructions</h3>
 <ul>
-  <li>Run with 'python manage.py runserver</li>
+  <li>Run with 'python manage.py runserver'</li>
   <li>Make sure network connection(Jquery and css bootstrap library's online link are used. )</li>
 </ul>
 
