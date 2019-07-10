@@ -18,4 +18,23 @@
   <li>From that list of webpages, we can see that webpage and save.</li>
 </ul>
 <hr>
+<h3>Installation:</h3>
+<ul>
+  <li>Use pip or conda to install all above python-libraries</li>
+  <li>Link css library and Link Jquery library</li>
+  <li>Access on localhost:8000/</li>
+</ul>
+<hr>
+<h3>Describe Functions:</h3>
+<h5>myapp/views.py</h5>
+<ul>
+  <li>Home() 
+  </li>
+  <li>request_element()</li>
+  <li>send_html_element_from_python_function()</li>
+  <li>save_file()</li>
+  <li>Show_pages()</li>
+  <li>Open_pages()</li>
+</ul>
+
 
