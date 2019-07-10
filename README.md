@@ -33,13 +33,33 @@
   <li>request_element()
     <ul>
       <li>url: <a href="#">localhost:8000/</a></li>
-      <li>This funtion will render home.html.</li>
+      <li>This funtion will render 'home.html'.</li>
     </ul>
   </li>
-  <li>send_html_element_from_python_function()</li>
-  <li>save_file()</li>
-  <li>Show_pages()</li>
-  <li>Open_pages()</li>
+  <li>send_html_element_from_python_function()
+    <ul>
+      <li>url: <a href="#">localhost:8000/request/element/</a></li>
+      <li>On click button(add more element) for add specific tag then jquery and ajax function request data from above url and then above function give response. In this function, a variable is declared as string value. I used that variable directly.</li>
+    </ul>
+  </li>
+  <li>save_file()
+    <ul>
+      <li>url: <a href="#">localhost:8000/savefile/<str:filename>/</a></li>
+      <li>On click Save button then page code is read with javascript and send to above function through above url and then code would be save in database.</li>
+    </ul>  
+  </li>
+  <li>Show_pages()
+    <ul>
+      <li>url: <a href="#">localhost:8000/show_pages/</a></li>
+      <li>On click button(show created pages), this function would retrive all data and show data file names with render 'show_pages.html' template.</li>
+    </ul>
+  </li>
+  <li>Open_pages()
+    <ul>
+      <li>url: <a href="#">localhost:8000/Open_page/</a></li>
+      <li>If we want open any webpage, then click button present in list then above function retrive data from database and send data through above url. </li>
+    </ul>
+  </li>
 </ul>
 
 
