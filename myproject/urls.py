@@ -21,10 +21,6 @@ from django.conf.urls import include, url
 urlpatterns = [
 	path('admin/', admin.site.urls),
 	path('', include('myapp.urls')),
-	#path('ankit/', include('myapp.views.hello')),
 ]
 
 
-# urlpatterns = [
-# 	url(r'^admin/', include(admin.site.urls)),
-# ]
