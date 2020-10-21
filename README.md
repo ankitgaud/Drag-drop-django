@@ -20,6 +20,9 @@
 <hr>
 <h3>Installation:</h3>
 <ul>
+  <li>To install using pip use below command :- <br/> ```pip install requirement.txt```</li>
+</ul>
+<ul>
   <li>Use pip or conda to install all above python-libraries</li>
   <li>Link css library and Link Jquery library</li>
   <li>Access on localhost:8000/</li>
